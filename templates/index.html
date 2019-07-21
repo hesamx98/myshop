@@ -10,6 +10,128 @@
     <script src="{% static 'js/main-icons.min.js' %}"></script>
 </head>
 <body>
+<div style="color: #faa05a" class="uk-card-body">
+    <nav class="uk-navbar-container" uk-navbar>
+        <a class="uk-position-top-left uk-overlay " uk-navbar-toggle-icon uk-toggle="target: #offcanvas-reveal"></a>
+        <div class="uk-navbar-right">
 
+            <div class="nav-overlay uk-navbar-right">
+
+                <a class="uk-navbar-toggle" uk-search-icon
+                   uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+            </div>
+
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                <div class="uk-navbar-item uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                   href="#"></a>
+
+            </div>
+
+        </div>
+    </nav>
+</div>
+
+
+<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-parent">
+                <a href="#">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li class="uk-parent">
+                <a href="#">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<form class="uk-grid-small" uk-grid>
+
+
+
+    <div class="uk-width-2-3@s">
+
+        <div class="uk-card-body">
+            <div class="uk-form-controls">
+                    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                        <h3 class="uk-card-title">Default</h3>
+                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="uk-section uk-section-default">
+    <div class="uk-container">
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <div style="background-color: #F8F8FF" class="uk-width-1-3@s">
+                <div class="uk-card-body">
+                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</form>
 </body>
 </html>
